@@ -1,4 +1,4 @@
-# MedTech Surgical Planning - Image Processing Web App
+# MedTech Surgical Planning: Image Processing Web App
 
 A full-stack web application for simulating medical image processing phases (arterial and venous) for surgical planning purposes.
 
@@ -15,16 +15,16 @@ This application allows users to:
 
 ## 🏗️ Architecture
 
-- **Frontend**: React + TypeScript + Tailwind CSS (hosted on Lovable/GitHub Pages)
-- **Backend**: Python Flask API (to be deployed on Hugging Face Space or similar)
+- **Frontend**: React + TypeScript + Tailwind CSS
+- **Backend**: Python Flask API 
 
 All image processing is performed server-side using Python, with no client-side operations.
 
 ## 🚀 Live Demo
 
-**Frontend URL**: 
+**Frontend URL**: https://medtech-mini-app-ten.vercel.app/
 
-**Backend URL**: To be deployed (see Backend Deployment section)
+**Backend URL**: https://fashadahmed-medtech-backend.hf.space
 
 ## 📁 Project Structure
 
@@ -44,12 +44,45 @@ All image processing is performed server-side using Python, with no client-side 
 │   └── README.md          # Backend deployment guide
 └── README.md              # This file
 ```
+## 📋 Requirements
+
+✅ Upload and display original image  
+✅ Phase selection (arterial/venous)  
+✅ Backend image processing in Python  
+✅ Side-by-side image comparison  
+✅ Complete frontend codebase  
+✅ Complete backend codebase  
+✅ Clear README with instructions  
+✅ Deployed frontend (Lovable)  
+
+
+## 🔧 Technologies Used
+
+**Frontend:**
+- React 18
+- TypeScript
+- Tailwind CSS
+- Shadcn UI components
+- Lucide icons
+
+**Backend:**
+- Python 3.9+
+- Flask
+- Pillow (PIL) for image processing
+- Flask-CORS
+
+## 📝 Notes
+
+- This is a simulation tool for demonstration purposes only
+- Not intended for actual clinical use
+- All image processing happens server-side
+- Sample CT scan image included for testing
 
 ## 🛠️ Local Development
 
 ### Frontend
 
-The frontend is already running in Lovable. To run locally:
+To run locally:
 
 ```bash
 npm install
@@ -85,7 +118,7 @@ const BACKEND_URL = "http://localhost:5000";
 
 The backend needs to be deployed to a separate server. Recommended options:
 
-### Option 1: Hugging Face Spaces (Recommended)
+### Hugging Face Spaces 
 
 1. Create a new Space at [huggingface.co/spaces](https://huggingface.co/spaces)
 2. Select "Docker" as SDK
@@ -93,28 +126,7 @@ The backend needs to be deployed to a separate server. Recommended options:
 4. Copy your Space URL
 5. Update frontend environment variable with backend URL
 
-### Option 2: Render.com
 
-1. Create account at [render.com](https://render.com)
-2. Create new Web Service from GitHub repo
-3. Configure:
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `gunicorn --bind 0.0.0.0:$PORT app:app`
-   - Root Directory: `backend`
-
-### Option 3: Railway.app
-
-1. Create account at [railway.app](https://railway.app)
-2. Create new project from GitHub
-3. Set root directory to `backend`
-4. Railway auto-detects Python and deploys
-
-**After deployment, update the frontend:**
-
-```typescript
-// Update BACKEND_URL in src/pages/Index.tsx
-const BACKEND_URL = "https://your-backend-url.com";
-```
 
 ## 🧪 Testing
 
@@ -123,39 +135,6 @@ const BACKEND_URL = "https://your-backend-url.com";
 3. Click "Process Image"
 4. View the processed result next to the original
 
-## 📋 Requirements Met
-
-✅ Upload and display original image  
-✅ Phase selection (arterial/venous)  
-✅ Backend image processing in Python  
-✅ Side-by-side image comparison  
-✅ Complete frontend codebase  
-✅ Complete backend codebase  
-✅ Clear README with instructions  
-✅ Deployed frontend (Lovable)  
-⏳ Backend deployment (pending - see Backend Deployment section)
-
-## 🔧 Technologies Used
-
-**Frontend:**
-- React 18
-- TypeScript
-- Tailwind CSS
-- Shadcn UI components
-- Lucide icons
-
-**Backend:**
-- Python 3.9+
-- Flask
-- Pillow (PIL) for image processing
-- Flask-CORS
-
-## 📝 Notes
-
-- This is a simulation tool for demonstration purposes only
-- Not intended for actual clinical use
-- All image processing happens server-side
-- Sample CT scan image included for testing
 
 ## 👨‍💻 Development Time
 
