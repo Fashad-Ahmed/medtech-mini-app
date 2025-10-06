@@ -22,7 +22,7 @@ All image processing is performed server-side using Python, with no client-side 
 
 ## 🚀 Live Demo
 
-**Frontend URL**: [Deployed on Lovable](https://lovable.dev/projects/51a14a17-2253-41b5-b9a5-25cef4086a08)
+**Frontend URL**: 
 
 **Backend URL**: To be deployed (see Backend Deployment section)
 
