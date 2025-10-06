@@ -25,6 +25,7 @@ All image processing is performed server-side using Python, with no client-side 
 **Frontend URL**: https://medtech-mini-app-ten.vercel.app/
 
 **Backend URL**: https://fashadahmed-medtech-backend.hf.space
+**Server Health Check** :https://fashadahmed-medtech-backend.hf.space/health
 
 ## 📁 Project Structure
 
