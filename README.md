@@ -53,7 +53,7 @@ All image processing is performed server-side using Python, with no client-side 
 ✅ Complete frontend codebase  
 ✅ Complete backend codebase  
 ✅ Clear README with instructions  
-✅ Deployed frontend (Lovable)  
+✅ Deployed frontend
 
 
 ## 🔧 Technologies Used
