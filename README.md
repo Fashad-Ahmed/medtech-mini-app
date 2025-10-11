@@ -144,4 +144,4 @@ Completed within the 4-hour timeframe as per assignment requirements.
 
 ## 📄 License
 
-This project is for educational/assessment purposes.
+This project is for educational purposes.
